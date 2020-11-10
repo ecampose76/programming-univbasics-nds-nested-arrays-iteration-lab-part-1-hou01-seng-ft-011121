@@ -3,18 +3,14 @@ def find_even_values(src)
   #
   # Output all even values in each nested array
 
-array = [
-  [1, 2, 3],
-  [4, 5, 6],
-  [7, 8, 9]
-]
 
 row = 0 
-while row < array.count do
+while row < src.count do
   element = 0 
-  while element < array[row].count do
-    
-    
+  while element < src[row].count do
+    if src[row][element].even? 
+      p src[row][element]
+    end
     element +=1 
   end
   row += 1 
