@@ -13,7 +13,8 @@ row = 0
 while row < array.count do
   element = 0 
   while element < array[row].count do
-    p array[row][element]
+    
+    
     element +=1 
   end
   row += 1 
